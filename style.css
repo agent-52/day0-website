@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body,html{
+  width: 100%;
+  height: 100%;
+}
+  
+
+.flex{
+  display: flex;
+}
+.cflex{
+  display: flex;
+  flex-direction: column;
+}
+.jcenter{
+  justify-content: center;
+}
+.acenter{
+  align-items: center;
+}
+.gap1{
+  gap: 1rem;
+}
+.gap4{
+  gap:0.65rem;
+}
+.gap2{
+  gap: 2rem;
+}
+.gap3{
+  gap: 3.5rem;
+}
+.fsize1{
+  font-size: 1.1rem;
+}
+.fsize2{
+  font-size: 5.1rem;
+}
+.fsize3{
+  font-size: 1.39rem;
+}
+.upperCase{
+  text-transform: uppercase;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+.linesp1{
+  letter-spacing: 0.1rem;
+}
+.circle3{
+  width: 42px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1.5px solid white;
+  display: grid;
+  place-items: center;
+}
+.circle1{
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid black
+}
+.circle2{
+  width: 10px;
+  background-color: white;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.transparent{
+  background-color: black;
+}
+.bold1{
+  font-weight: 550;
+}
+.white{
+  color: white
+}
+.bgwhite{
+  background-color: white;
+}
+.black{
+  color: black
+}
+.orange{
+  background-color: rgb(255, 94, 0);
+}
+.grey{
+  background-color: gainsboro;
+}
+.wheat{
+  background-color: wheat;
+}
+body{
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-rows: min-content 1fr;
+  background-color: black;
+  color: white;
+  display: grid;
+  row-gap: 3.6rem;
+  grid-template-areas: ". header ."
+  ". main1 ."
+  ". main2 .";
+  /* height: 100vh; */
+
+  
+  
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.main1{
+  grid-area: main1;
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  height: min-content;
+}
+header{
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-transform: uppercase;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid grey;
+  height: 70px;
+}
+
+.logo{
+  width: 220px;
+}
+.hleft{
+  justify-content: space-between;
+}
+.hright{
+  justify-self: end;
+}
+
+.imageSlide{
+  display: flex;
+  gap: rem;
+}
+.maintld{
+  justify-content: space-between;
+  border-top: 2px solid grey;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  
+}
+/* right */
+.dotbox{
+  display: flex;
+  gap: 0.3rem;
+  background-color: black;
+  width: min-content;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  padding-inline: 2rem;
+  border-bottom-left-radius: 1.3rem;
+
+}
+
+.maintr{
+  background-image: url(./images/image1.avif);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.bar{
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  padding-block: 0.3rem;
+  
+}
+.arrowCircle{
+  background-color: black;
+  display: grid;
+  place-items: center;
+  color: white;
+  border: none;
+}
+.main2{
+  display: grid;
+  grid-area: main2;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  
+}
+.label1{
+  border: 1.4px solid white;
+  padding: 0.3rem 0.7rem;
+  display:grid;
+  place-items: center;
+  border-radius: 1.3rem;
+  width: fit-content; 
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  position: relative;
+  border: none;
+}
+.img2{
+  width: 40px;
+}
+.margin1{
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.margin2{
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.shortBox{
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-90%);
+  width: 100px;
+  height: 20px;
+  border-top-left-radius: 1.9rem;
+  border-top-right-radius: 1.3rem;
+  
+
+}
+.dots1{
+  background-color: black;
+  border: 2px solid black;
+}
+.abimg{
+  position: absolute;
+  right: 7%;
+  top: 15%;
+  width: 30px;
+  height: 25px;
+  
+}
