@@ -111,6 +111,7 @@ body{
   ". main1 ."
   ". main2 .";
   /* height: 100vh; */
+  overflow: hidden;
 
   
   
